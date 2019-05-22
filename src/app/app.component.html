@@ -1,7 +1,7 @@
 
 <div class="back">
-  <app-header></app-header>
-  <app-body></app-body>
+  <app-header (card)="redirect($event)"></app-header>
+  <app-body [card]="card"></app-body>
 </div>
 
 <router-outlet></router-outlet>

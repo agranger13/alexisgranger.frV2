@@ -1,3 +1,15 @@
 <div class="content">
-
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div [ngClass]="{'carousel-item': true, 'active': card=='works'}">
+        <p>works</p>
+      </div>
+      <div [ngClass]="{'carousel-item': true, 'active': card=='about'}">
+        <p>about</p>
+      </div>
+      <div [ngClass]="{'carousel-item': true, 'active': card=='contact'}">
+        <p>contact</p>
+      </div>
+    </div>
+  </div>
 </div>

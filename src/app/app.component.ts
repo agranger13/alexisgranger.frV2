@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'alexisgrangerV2';
+  card;
+
+  redirect(event){
+    this.card = event;
+  }
 }
