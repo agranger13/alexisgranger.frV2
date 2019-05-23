@@ -6,7 +6,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent implements OnInit {
-  @Output() card : EventEmitter<any> = new EventEmitter;
+  @Output() card : EventEmitter<any> = new EventEmitter();
+  actuel = "home";
 
   constructor() { }
 
@@ -14,7 +15,8 @@ export class HeaderComponent implements OnInit {
   }
 
   onClick(nameCard){
-    this.card.emit(nameCard)
+    this.actuel = nameCard;
+    this.card.emit(nameCard);
   }
 
 }
